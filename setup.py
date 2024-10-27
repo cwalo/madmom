@@ -36,6 +36,10 @@ extensions = [
     ),
 ]
 
+print("About to cythonize extensions:", extensions)
+cythonized = cythonize(extensions)
+print("Cythonized extensions:", cythonized)
+
 # define scripts to be installed by the PyPI package
 scripts = glob.glob('bin/*')
 
